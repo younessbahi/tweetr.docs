@@ -122,9 +122,9 @@
 tw <-
     get_tweets(
         query  = '#Bitcoin',
-        .since = '2022-10-10',
-        .until = '2022-10-14'
-        .count = 100
+        since = '2022-10-10',
+        until = '2022-10-14'
+        count = 100
 )
 
 # From curl:
@@ -10199,7 +10199,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     <td>Can be hashtag, keyword, or a user.</td>
                 </tr>
                 <tr>
-                    <td>.count</td>
+                    <td>count</td>
                     <td>No</td>
                     <td>Number</td>
                     <td>Default to -1, this will collect all tweets related to your search unless you specify a number
@@ -10208,7 +10208,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.lat</td>
+                    <td>lat</td>
                     <td>No</td>
                     <td>Number</td>
                     <td>Latitude value to provide for geographical search (<i>ex: 33.575692</i>).
@@ -10218,7 +10218,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.long</td>
+                    <td>long</td>
                     <td>No</td>
                     <td>Number</td>
                     <td>Longitude value to provide for geographical search (<i>ex: -7.625285</i>).
@@ -10228,7 +10228,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.radius</td>
+                    <td>radius</td>
                     <td>No</td>
                     <td>String</td>
                     <td>Match Tweets with Tweet-specific location information that are within a sphere-shaped geographic
@@ -10239,14 +10239,14 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.place</td>
+                    <td>place</td>
                     <td>No</td>
                     <td>String</td>
                     <td>Match Tweets Nearby a city or country.
                     </td>
                 </tr>
                 <tr>
-                    <td>.since</td>
+                    <td>since</td>
                     <td>No</td>
                     <td>Date</td>
                     <td>Filter tweets from a specific date.<br>Allowed date format: <i
@@ -10254,7 +10254,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.until</td>
+                    <td>until</td>
                     <td>No</td>
                     <td>Date</td>
                     <td>Filter tweets upto a specific date.<br>Allowed date format: <i
@@ -10262,7 +10262,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.from</td>
+                    <td>from</td>
                     <td>No</td>
                     <td>String</td>
                     <td>
@@ -10278,7 +10278,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.replies</td>
+                    <td>replies</td>
                     <td>No</td>
                     <td>Logical</td>
                     <td>
@@ -10287,7 +10287,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.minLikes</td>
+                    <td>minLikes</td>
                     <td>No</td>
                     <td>Number</td>
                     <td>
@@ -10295,7 +10295,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.minReplies</td>
+                    <td>minReplies</td>
                     <td>No</td>
                     <td>Number</td>
                     <td>
@@ -10303,7 +10303,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.minRetweets</td>
+                    <td>minRetweets</td>
                     <td>No</td>
                     <td>Number</td>
                     <td>
@@ -10311,7 +10311,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.verified</td>
+                    <td>verified</td>
                     <td>No</td>
                     <td>Logical</td>
                     <td>
@@ -10320,7 +10320,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.hasImage</td>
+                    <td>hasImage</td>
                     <td>No</td>
                     <td>Logical</td>
                     <td>
@@ -10328,7 +10328,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.hasVideo</td>
+                    <td>hasVideo</td>
                     <td>No</td>
                     <td>Logical</td>
                     <td>
@@ -10336,7 +10336,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.hasMedia</td>
+                    <td>hasMedia</td>
                     <td>No</td>
                     <td>Logical</td>
                     <td>
@@ -10344,7 +10344,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.hasLinks</td>
+                    <td>hasLinks</td>
                     <td>No</td>
                     <td>Logical</td>
                     <td>
@@ -10352,7 +10352,7 @@ curl -X GET "https://twittr-api.herokuapp.com/search?query=%23Bitcoin&.count=100
                     </td>
                 </tr>
                 <tr>
-                    <td>.url</td>
+                    <td>url</td>
                     <td>No</td>
                     <td>String</td>
                     <td>
